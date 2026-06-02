@@ -1,2 +1,2 @@
 # tienda-de-mascotas-
-pryecto
+proyecto
