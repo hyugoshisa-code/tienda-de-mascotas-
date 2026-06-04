@@ -537,6 +537,21 @@ footer {
     margin: 10px 0;
     font-size: 14px;
     line-height: 1.35;
+    align-items: start;
+}
+
+.locations i {
+    color: var(--green);
+    margin-top: 3px;
+}
+
+.locations span {
+    display: block;
+}
+
+.locations strong {
+    color: var(--green);
+    margin-right: 4px;
 }
 
 .locations i {
