@@ -4,264 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gato | DocPet</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer">
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="../css/Gato.css">
 </head>
-
 <body>
-<header>
-    <div class="topbar">
-        <div class="div1">
-            <p><i class="fa-solid fa-truck"></i> Envíos a todo el Perú</p>
-            <p><i class="fa-solid fa-shield-halved"></i> Pagos 100% seguro</p>
+    <header>
+        <div class="topbar">
+            <div class="div1">
+                <p><i class="fa-solid fa-truck"></i>Envios a todo el Perú</p>
+                <p><i class="fa-solid fa-shield"></i>Pagos 100% seguro</p>
+            </div>
+            <div class="div2">
+                <p>Todo lo mejor y de la mejor calidad para tus mascotas</p>
+            </div>
         </div>
-
-        <div class="div2">
-            <p>Todo lo mejor y de la mejor calidad para tus mascotas</p>
-        </div>
-    </div>
-
-    <div class="midbar">
-        <a class="logoContainer" href="./Inicio.html">
-            <img src="../assets/img/logotipo.png" alt="DocPet">
-        </a>
-
-        <form class="searchContainer" id="searchForm">
-            <div class="inputContainer">
-                <input id="buscador" type="text" placeholder="Buscar productos, marcas y más...">
-                <i class="fa-solid fa-microphone"></i>
+        <div class="midbar">
+            <div class="logoContainer">
+                <img src="../assets//img/logotipo.png" alt="Logo1">
             </div>
 
-            <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
+            <div class="searchContainer">
+                <div class="inputContainer">
+                    <input type="text" placeholder="Buscar productos, marcas y más...">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
 
-        <div class="userOptionsContainer">
-            <a class="iconContainer" href="./carritodeventa.html">
-                <span class="cartIcon">
+            <div class="userOptionsContainer">
+                <div class="iconContainer">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span id="cartCount">0</span>
-                </span>
-                <span>Carrito</span>
-            </a>
-
-            <button class="iconContainer accountButton" type="button">
-                <i class="fa-regular fa-circle-user"></i>
-                <span>Mi cuenta</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="bottombar">
-        <nav>
-            <ul>
-                <li>
-                    <a href="./Inicio.html">
-                        <i class="fa-solid fa-house"></i>
-                        Inicio
-                    </a>
-                </li>
-
-                <li class="menuItem active">
-                    <a href="./Gato.html">
-                        <i class="fa-solid fa-cat"></i>
-                        Gato
-                    </a>
-
-                    <ul class="dropdownMenu">
-                        <li><button class="stageOption active" type="button" data-stage="gatito">Gatito</button></li>
-                        <li><button class="stageOption" type="button" data-stage="adulto">Adulto</button></li>
-                        <li><button class="stageOption" type="button" data-stage="senior">Senior</button></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="./Perro.html">
-                        <i class="fa-solid fa-dog"></i>
-                        Perro
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./Otros.html">
-                        <i class="fa-solid fa-table-cells-large"></i>
-                        Otros
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./Accesorios.html">
-                        <i class="fa-solid fa-briefcase"></i>
-                        Accesorios
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./Contacto.html">
-                        <i class="fa-regular fa-envelope"></i>
-                        Contacto
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <section class="breadcrumb">
-        <a href="./Inicio.html">Inicio</a>
-        <span>></span>
-        <a href="./Gato.html">Gato</a>
-        <span>></span>
-        <strong id="stageName">Gatito</strong>
-    </section>
-
-    <section class="catalogLayout">
-        <aside class="filters">
-            <div class="filterBlock">
-                <h3>Razas</h3>
-
-                <label><input type="checkbox" data-filter="raza" value="siames"> Siamés</label>
-                <label><input type="checkbox" data-filter="raza" value="british"> British</label>
-                <label><input type="checkbox" data-filter="raza" value="maine"> Maine</label>
-                <label><input type="checkbox" data-filter="raza" value="persa"> Persa</label>
-                <label><input type="checkbox" data-filter="raza" value="esfinge"> Esfinge</label>
-                <label><input type="checkbox" data-filter="raza" value="fellino"> Fellino</label>
-
-                <button class="moreButton" type="button">+ Más razas</button>
-            </div>
-
-            <div class="filterBlock">
-                <h3>Categoría</h3>
-
-                <label><input type="checkbox" data-filter="categoria" value="comida"> Comida</label>
-                <label><input type="checkbox" data-filter="categoria" value="salud"> Salud e Higiene</label>
-                <label><input type="checkbox" data-filter="categoria" value="accesorios"> Accesorios</label>
-                <label><input type="checkbox" data-filter="categoria" value="ropa"> Ropa</label>
-            </div>
-
-            <div class="filterBlock">
-                <h3>Marcas</h3>
-
-                <label><input type="checkbox" data-filter="marca" value="ricocat"> Ricocat</label>
-                <label><input type="checkbox" data-filter="marca" value="supercat"> Supercat</label>
-                <label><input type="checkbox" data-filter="marca" value="mimaskot"> Mimaskot</label>
-                <label><input type="checkbox" data-filter="marca" value="pitucats"> Pitucats</label>
-                <label><input type="checkbox" data-filter="marca" value="animal-spirit"> Animal Spirit</label>
-                <label><input type="checkbox" data-filter="marca" value="atrevia"> Atrevia</label>
-
-                <button class="moreButton" type="button">+ Más marcas</button>
-            </div>
-
-            <div class="filterBlock">
-                <h3>Precios</h3>
-
-                <div class="priceFilter">
-                    <input id="minPrice" type="number" min="0" placeholder="S/ Min.">
-                    <input id="maxPrice" type="number" min="0" placeholder="S/ Máx.">
-
-                    <button id="priceButton" type="button">
-                        <i class="fa-solid fa-filter"></i>
-                    </button>
+                    <span>Carrito</span>
                 </div>
-
-                <button id="clearFilters" class="clearButton" type="button">Limpiar filtros</button>
-            </div>
-        </aside>
-
-        <section class="productsArea">
-            <div class="catalogHeader">
-                <p id="resultCount"></p>
-
-                <div class="sortBox">
-                    <label for="sortProducts">Ordenar por:</label>
-
-                    <select id="sortProducts">
-                        <option value="vendidos">Más vendidos</option>
-                        <option value="menor-precio">Menor precio</option>
-                        <option value="mayor-precio">Mayor precio</option>
-                        <option value="az">Nombre A-Z</option>
-                    </select>
+                <div class="iconContainer">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Mi cuenta</span>
                 </div>
             </div>
-
-            <div id="productsGrid" class="productsGrid"></div>
-
-            <p id="emptyState" class="emptyState" hidden>
-                No se encontraron productos con esos filtros.
-            </p>
-
-            <div id="pagination" class="pagination"></div>
-        </section>
-    </section>
-</main>
-
-<footer>
-    <div class="footerMain">
-        <div class="footerBrand">
-            <img src="../assets/img/logotipo.png" alt="DocPet">
         </div>
+        <div class="bottombar">
+            <nav>
+                <ul>
+                    <li>
 
-        <ul class="footerLinks">
-            <li><a href="#">Acerca de Nosotros</a></li>
-            <li><a href="./Contacto.html">Contáctanos</a></li>
-            <li><a href="#">Marcas</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#">Política de Privacidad</a></li>
-        </ul>
+                        <a href="./Inicio.html">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
 
-        <div class="locations">
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                <span><strong>Lima:</strong> Av. Javier Prado Este 2120, San Borja 15036</span>
-            </p>
+                        <a href="./gato.html">
+                            <i class="fa-solid fa-cat"></i>
+                            Gatos
+                        </a>
+                    </li>
+                    <li>
 
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                <span><strong>Ayacucho:</strong> Av. 28 de Julio 4020, 2do Piso</span>
-            </p>
+                        <a href="./perro.html">
+                            <i class="fa-solid fa-dog"></i>Perros
+                        </a>
+                    </li>
+                    <li>
 
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                <span><strong>Huancayo:</strong> Calle Real 320, Huancayo 12001</span>
-            </p>
+                        <a href="./Otros.html">
+                            <i class="fa-solid fa-cubes"></i>
+                            Otros
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="./accesorios.html">
+                            <i class="fa-solid fa-tshirt"></i>
+                            Accesorios
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="./Contacto.html">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
+    </header>
+   
 
-        <div class="social">
-            <h3>Síguenos en nuestras redes sociales:</h3>
-
-            <div>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="footerBottom">
-        <p>© 2024 Docpet. Todos los derechos reservados.</p>
-
-        <div class="payments">
-            <span>VISA</span>
-            <span>mastercard</span>
-            <span>AMERICAN EXPRESS</span>
-            <span>Diners Club</span>
-        </div>
-    </div>
-</footer>
-
-<a class="whatsappFloat" href="https://wa.me/51999999999" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<div id="toast" class="toast"></div>
-
-<script src="../js/Gato.js"></script>
+    
 </body>
 </html>
