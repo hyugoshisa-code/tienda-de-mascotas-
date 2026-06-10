@@ -20,7 +20,7 @@
          display: flex;
          justify-content: center;
          color: white;
-         font-size: 8px;
+         font-size: 14px;
          font-family: 'Arial', sans-serif;
          gap: 50px;
 
@@ -36,7 +36,7 @@
          display: flex;
          justify-content: center;
          color: white;
-         font-size: 8px;
+         font-size: 14px;
          font-family: 'Arial', sans-serif;
        }
      }
@@ -51,7 +51,7 @@
          justify-content: center;
          align-items: center;
          width: 30%;
-         height: 50px;
+         height: 80px;
 
          img {
            object-fit: contain;
@@ -64,7 +64,7 @@
          justify-content: center;
          align-items: center;
          width: 40%;
-         height: 50px;
+         height: 80px;
 
          .inputContainer {
            width: 70%;
@@ -75,11 +75,11 @@
 
            input {
              width: 100%;
-             height: 30px;
+             height: 40px;
              border: 1px solid #ccc;
              border-radius: 4px;
              padding-left: 10px;
-             font-size: 10px;
+             font-size: 14px;
            }
 
            i {
@@ -92,7 +92,7 @@
 
 
          button {
-           height: 30px;
+           height: 40px;
            aspect-ratio: 1/1;
            background-color: #004413;
            color: white;
@@ -110,17 +110,35 @@
          justify-content: center;
          align-items: center;
          width: 30%;
-         height: 50px;
+         height: 80px;
          gap: 20px;
+
+         #cart {
+
+           &:hover,
+           &:active {
+
+             >i,
+             >span {
+               color: #004413
+             }
+           }
+
+
+         }
 
          .iconContainer {
            display: flex;
            flex-direction: column;
            justify-content: center;
            align-items: center;
+           padding: 5px;
+           border: none;
+           background: none;
+           cursor: pointer;
 
            span {
-             font-size: 10px;
+             font-size: 15px;
              font-family: 'Arial', sans-serif;
            }
          }
@@ -155,7 +173,10 @@
                text-decoration: none;
                color: black;
                font-family: 'Arial', sans-serif;
-               font-size: 10px;
+               font-size: 16px;
+               display: flex;
+               justify-content: center;
+               gap: 5px;
              }
 
              &:hover {
@@ -173,56 +194,62 @@
 
 
      }
-     .homecontainer button.fa-chevron-left{
-      background-color: #004413 ;
-      color: #ffffff;
-      border :none;
-      border-radius:50% ;
-      width: 45px;
-      height: 45px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
+   }
 
-      box-shadow:
-        0 0 0 4px rgb(11,102,35,0.2)
-        0 0 0 9px rgb(11,102,35,0.1)
-        0 0 14px rgb(11,102,35,0.05);
 
-      transition: all 0.3s ease;
+   main {
+     margin: 20px 0;
+
+     .homecontainer button.fa-chevron-left {
+       background-color: #004413;
+       color: #ffffff;
+       border: none;
+       border-radius: 50%;
+       width: 45px;
+       height: 45px;
+       cursor: pointer;
+       display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 12px;
+
+       box-shadow:
+         0 0 0 4px rgb(11, 102, 35, 0.2) 0 0 0 9px rgb(11, 102, 35, 0.1) 0 0 14px rgb(11, 102, 35, 0.05);
+
+       transition: all 0.3s ease;
      }
-     .homecontainer button.fa-chevron-right{
-      background-color: #004413 ;
-      color: #ffffff;
-      border :none;
-      border-radius:50% ;
-      width: 45px;
-      height: 45px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
 
-      box-shadow:
-        0 0 0 4px rgb(11,102,35,0.2)
-        0 0 0 9px rgb(11,102,35,0.1)
-        0 0 14px rgb(11,102,35,0.05);
+     .homecontainer button.fa-chevron-right {
+       background-color: #004413;
+       color: #ffffff;
+       border: none;
+       border-radius: 50%;
+       width: 45px;
+       height: 45px;
+       cursor: pointer;
+       display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 16px;
 
-      transition: all 0.3s ease;
+       box-shadow:
+         0 0 0 4px rgb(11, 102, 35, 0.2) 0 0 0 9px rgb(11, 102, 35, 0.1) 0 0 14px rgb(11, 102, 35, 0.05);
+
+       transition: all 0.3s ease;
      }
-     .homecontainer button.fa-chevron-left:hover{
-      transform: scale(1.08);
-      background-color: #02631c !important;
+
+     .homecontainer button.fa-chevron-left:hover {
+       transform: scale(1.08);
+       background-color: #02631c !important;
      }
+
      .homecontainer button.fa-chevron-right:hover {
-      transform: scale(1.08);
-      background-color: #02631c !important;
+       transform: scale(1.08);
+       background-color: #02631c !important;
      }
-    .homecontainer {
-      
+
+     .homecontainer {
+
        background-color: lch(91.89% 8.56 251.15);
        display: flex;
        align-items: center;
@@ -235,54 +262,57 @@
        margin: 0 auto;
        border-radius: 8px;
 
-      
+
        .caso1 {
          display: flex;
          flex-direction: column;
          width: 50%;
          font-family: 'Arial', sans-serif;
          text-align: left;
-         .p {
-             text-align: left;
-             font-family: 'Arial', sans-serif;
-         }
-         
-       }
-       .btn-descubrir {
-        background-color: #004413 ;
-        color: #ffffff;
-        border-radius: 10px;
-        padding: 6px 0px;
-        gap: 5px;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        font-size: 15px;
-        width: 150px;
-        text-align: center;
 
-        box-shadow:
-          0 0 0 4px rgb(11,102,35,0.2)
-          0 0 0 9px rgb(11,102,35,0.1)
-          0 0 14px rgb(11,102,35,0.05);
+         .p {
+           text-align: left;
+           font-family: 'Arial', sans-serif;
+         }
+
+       }
+
+       .btn-descubrir {
+         background-color: #004413;
+         color: #ffffff;
+         border-radius: 10px;
+         padding: 6px 0px;
+         gap: 5px;
+         cursor: pointer;
+         align-items: center;
+         justify-content: center;
+         font-size: 15px;
+         width: 150px;
+         text-align: center;
+
+         box-shadow:
+           0 0 0 4px rgb(11, 102, 35, 0.2) 0 0 0 9px rgb(11, 102, 35, 0.1) 0 0 14px rgb(11, 102, 35, 0.05);
 
          transition: all 0.3s ease;
-        
-          }
-         .homecontainer .btn-descubrir{
-           transform: scale(1.08);
-           background-color: #02631c !important;
-           } 
-       .caso2 img {
-         
-          width: 350px;
-          height: auto;
-          object-fit: contain;  
+
        }
-      }
-    .homecontainer1{
-      
-      background-color: lch(89.41% 0.88 236.41);
+
+       .homecontainer .btn-descubrir {
+         transform: scale(1.08);
+         background-color: #02631c !important;
+       }
+
+       .caso2 img {
+
+         width: 350px;
+         height: auto;
+         object-fit: contain;
+       }
+     }
+
+     .homecontainer1 {
+
+       background-color: lch(89.41% 0.88 236.41);
        display: flex;
        align-items: center;
        justify-content: center;
@@ -293,17 +323,14 @@
        box-sizing: border-box;
        margin: 0 auto;
        border-radius: 8px;
+
        .homeconteiner1 h1 {
-        text-align: center;
-        font-size: 2.8rem;
-        margin: 0;
+         text-align: center;
+         font-size: 2.8rem;
+         margin: 0;
 
        }
-       
 
-      
-
-
-    }
+     }
+   }
  }
-}
