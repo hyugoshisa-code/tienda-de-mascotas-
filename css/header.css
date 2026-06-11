@@ -146,7 +146,7 @@
                        height: 600px;
                        z-index: 100;
 
-                       .topBar {
+                       .cartTopBar {
                            height: 50px;
                            display: flex;
                            justify-content: space-between;
@@ -163,6 +163,7 @@
                                justify-content: center;
                                align-items: center;
                                text-decoration: none;
+                               color: black;
 
                                &:hover {
                                    >i {
@@ -177,14 +178,114 @@
                            }
                        }
 
-                       .midBar {
-                           height: 500px;
-                           background-color: white;
+                       .cartMidBar {
+                           height: 450px;
+                           overflow-y: auto;
+                           overflow-x: none;
+
+                           .productInCart {
+                               display: flex;
+                               padding: 5px;
+                               border-bottom: 1px solid #0001;
+
+                               .productData {
+                                   height: 70px;
+                                   width: 70%;
+                                   display: flex;
+                                   justify-content: start;
+                                   align-items: center;
+                                   gap: 10px;
+
+
+                                   .productImage {
+                                       height: 100%;
+                                       aspect-ratio: 1.5/1;
+
+                                       >img {
+                                           height: 100%;
+                                           object-fit: contain;
+                                       }
+                                   }
+
+                                   .productInfo {
+                                       display: flex;
+                                       flex-direction: column;
+                                       justify-content: center;
+                                       height: 100%;
+                                       padding: 10px 0;
+                                       gap: 10px;
+
+                                       .productName {
+                                           font-weight: bold;
+                                           font-size: 16px;
+                                           text-align: left;
+                                       }
+
+                                       .productPrice {
+                                           font-weight: bolder;
+                                           font-size: 14px;
+                                           text-align: left;
+                                           color: orange;
+                                       }
+                                   }
+                               }
+
+                               .productActions {
+                                   width: 30%;
+                                   display: flex;
+                                   justify-content: center;
+                                   align-items: center;
+                                   gap: 5px;
+
+                                   input {
+                                       width: 60px;
+                                       font-size: 16px;
+                                       outline: none;
+                                       text-align: center;
+                                       padding: 10px;
+                                       overflow: hidden;
+                                   }
+
+                                   a {
+                                       font-size: 20px;
+                                       color: black;
+                                       text-decoration: none;
+
+                                       &:hover {
+                                           color: red;
+                                       }
+                                   }
+                               }
+                           }
                        }
 
-                       .bottomBar {
-                           height: 50px;
-                           background-color: #004413;
+                       .cartBottomBar {
+                           height: 100px;
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: center;
+                           align-items: center;
+
+                           .totalContainer {
+                               width: 100%;
+                               display: flex;
+                               justify-content: end;
+                               align-items: center;
+                               padding: 10px;
+
+                               p {
+                                   font-size: 18px;
+                                   color: black;
+                                   font-weight: 600;
+
+                                   span {
+                                       padding: 0 0 0 10px;
+                                       font-size: 18px;
+                                       color: orange;
+                                   }
+                               }
+                           }
+
                        }
                    }
                }
