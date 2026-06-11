@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gato | DocPet</title>
+    <title>Inicio | DocPet</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/Gato.css">
 </head>
 
@@ -36,14 +42,32 @@
             </div>
 
             <div class="userOptionsContainer">
-                <div class="iconContainer">
+                <button class="iconContainer" id="cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span>Carrito</span>
-                </div>
-                <div class="iconContainer">
+
+                    <div class="cartContainer">
+                        <div class="topBar">
+                            <h3>TU CARRITO</h3>
+                            <a href="#">
+
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+
+                        </div>
+                        <div class="midBar">
+                            <p>Contenido del carrito</p>
+                        </div>
+                        <div class="bottomBar">
+                            Total y Boton
+                        </div>
+                    </div>
+
+                </button>
+                <button class="iconContainer">
                     <i class="fa-solid fa-user"></i>
                     <span>Mi cuenta</span>
-                </div>
+                </button>
             </div>
         </div>
         <div class="bottombar">
@@ -94,20 +118,21 @@
                 </ul>
             </nav>
         </div>
-    </header>
 
-     <main>
+
+    </header>
+    <main>
         <div class="busqueda">
             <div class="historial">
                 <p>
                     <span>inicio</span>
                     <i class="fa-solid fa-chevron-right"></i>
-                    
+
                     <span>perro</span>
                     <i class="fa-solid fa-chevron-right"></i>
                     <span>cachorro</span>
                     <i class="fa-solid fa-chevron-right"></i>
-                    
+
                 </p>
 
             </div>
@@ -132,13 +157,47 @@
 
 
     </main>
-   
-
-
-</body>
-
-
-
+    <footer>
+        <div class="contactbar">
+            <div class="logocont">
+                <img src="../assets/img/logotipo.png" alt="Logo2">
+            </div>
+            <div class="contactlink">
+                <p><strong>Enlaces de interés</strong></p>
+                <ul>
+                    <li><a href="">Acerca de Nosotros</a></li>
+                    <li><a href="">Contáctenos</a></li>
+                    <li><a href="">Marcas</a></li>
+                    <li><a href="">Términos y condiciones</a></li>
+                    <li><a href="">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="location">
+                <p><i class="fa-solid fa-location-dot" style="color: hsv(137, 100%, 26%);"></i>Lima: Av. Javier Prado
+                    Este 2120, San Borja 15036</p>
+                <p><i class="fa-solid fa-location-dot" style="color: hsv(137, 100%, 26%);"></i>Ayachucho: Av. 28 de
+                    julio 4020, 2do piso</p>
+                <p><i class="fa-solid fa-location-dot" style="color: hsv(137, 100%, 26%);"></i>Huancayo: Calle Real 320,
+                    Huancayo 12001</p>
+            </div>
+            <div>
+                <p><strong>Síguenos en nuestras redes sociales</strong></p>
+                <div class="socialmedia">
+                    <img src="../assets/img/contacto/facebook.png" alt="">
+                    <img src="../assets/img/contacto/instragran.png" alt="">
+                </div>
+            </div>
+            <div class="whatsapp">
+                <img src="../assets/img/contacto/whasap.png" alt="">
+            </div>
+        </div>
+        <div class="bottombar">
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> 2024 Docpet. Todos los derechos reservados.</p>
+            </div>
+            <div></div>
+        </div>
+    </footer>
 </body>
 
 </html>
