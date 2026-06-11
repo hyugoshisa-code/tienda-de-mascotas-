@@ -284,6 +284,22 @@
                                        color: orange;
                                    }
                                }
+
+
+                           }
+
+                           a {
+                               width: 90%;
+                               height: 40px;
+                               display: flex;
+                               justify-content: center;
+                               align-items: center;
+                               color: white;
+                               font-size: 20px;
+                               text-decoration: none;
+                               border-radius: 5px;
+                               gap: 5px;
+                               background-color: #004413;
                            }
 
                        }
