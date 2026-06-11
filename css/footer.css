@@ -2,14 +2,15 @@
       .contactbar {
           background-color: aliceblue;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-evenly;
           align-items: center;
+          margin: 20px 0;
 
           .logocont {
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 30%;
+              width: 25%;
               height: 50px;
 
               img {
@@ -20,57 +21,82 @@
 
           .contactlink {
               font-size: 10px;
-              width: 30%;
-              height: 130px;
-              gap: 20px;
+              width: 25%;
+
+              ul {
+                  list-style: none;
+
+                  a {
+                      text-decoration: none;
+                      color: black;
+                  }
+              }
           }
 
           .location {
               font-size: 10px;
-              width: 30%;
-              height: 130px;
+              width: 25%;
               gap: 20px;
           }
 
-          .socialmedia {
+          .socialnetworks {
               display: flex;
-              flex-direction: row;
+              flex-direction: column;
+              align-items: center;
+              width: 25%;
+              gap: 10px;
 
-              img {
-                  justify-content: center;
-                  align-items: center;
-                  width: 30%;
-                  height: 50px;
-                  object-fit: contain;
+              .socialmedia {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 10px;
+
+                  .imgContainer {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      width: 40px;
+                      height: 40px;
+                      
+
+                      img {
+                          object-fit: cover;
+                          width: 100%;
+                      }
+                  }
               }
           }
       }
+  }
 
-      .whatsapp {
-          img {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-              height: 100px;
-              object-fit: contain;
-          }
-      }
+  .whatsapp {
+      position: fixed;
+      bottom: 0;
+      right: 0;
 
-      .bottombar {
-          background-color: #004413;
+      img {
           display: flex;
-          justify-content: space-between;
-          padding: 5px;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100px;
+          object-fit: contain;
+      }
+  }
 
-          .copyright {
-              width: 50%;
-              display: flex;
-              justify-content: center;
-              color: white;
-              font-size: 8px;
-              font-family: 'Arial', sans-serif;
-              gap: 50px;
-          }
+  .bottombar {
+      background-color: #004413;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+
+      .copyright {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          color: white;
+          font-size: 8px;
+          font-family: 'Arial', sans-serif;
+          gap: 50px;
       }
   }
