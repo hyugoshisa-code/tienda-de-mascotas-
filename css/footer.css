@@ -57,7 +57,7 @@
                       align-items: center;
                       width: 40px;
                       height: 40px;
-                      
+
 
                       img {
                           object-fit: cover;
@@ -67,36 +67,36 @@
               }
           }
       }
-  }
 
-  .whatsapp {
-      position: fixed;
-      bottom: 0;
-      right: 0;
+      .whatsapp {
+          position: fixed;
+          bottom: 0;
+          right: 0;
 
-      img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100px;
-          object-fit: contain;
+          img {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100px;
+              object-fit: contain;
+          }
       }
-  }
 
-  .bottombar {
-      background-color: #004413;
-      display: flex;
-      justify-content: space-between;
-      padding: 5px;
-
-      .copyright {
-          width: 50%;
+      .bottombar {
+          background-color: #004413;
           display: flex;
-          justify-content: center;
-          color: white;
-          font-size: 8px;
-          font-family: 'Arial', sans-serif;
-          gap: 50px;
+          justify-content: space-between;
+          padding: 5px;
+
+          .copyright {
+              width: 50%;
+              display: flex;
+              justify-content: center;
+              color: white;
+              font-size: 8px;
+              font-family: 'Arial', sans-serif;
+              gap: 50px;
+          }
       }
   }
