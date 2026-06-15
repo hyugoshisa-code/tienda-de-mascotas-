@@ -1,257 +1,225 @@
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
- body {
-   width: 100%;
-   font-family: 'Arial', sans-serif;
+body {
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
 
-   main {
-     margin: 20px 0;
+main {
+  margin: 20px 0;
+}
 
-     .homecontainer button.fa-chevron-left {
-       background-color: #004413;
-       color: #ffffff;
-       border: none;
-       border-radius: 50%;
-       width: 45px;
-       height: 45px;
-       cursor: pointer;
-       display: inline-flex;
-       align-items: center;
-       justify-content: center;
-       font-size: 12px;
+.homecontainer button.fa-chevron-left {
+  background-color: #004413;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  box-shadow: 0 0 0 4px rgb(11, 102, 35, 0.2) 0 0 0 9px rgb(11, 102, 35, 0.1) 0 0 14px rgb(11, 102, 35, 0.05);
+  transition: all 0.3s ease;
+}
 
-       box-shadow:
-         0 0 0 4px rgb(11, 102, 35, 0.2) 0 0 0 9px rgb(11, 102, 35, 0.1) 0 0 14px rgb(11, 102, 35, 0.05);
+.homecontainer button.fa-chevron-right {
+  background-color: #004413;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 0 0 4px rgb(11, 102, 35, 0.2) 0 0 0 9px rgb(11, 102, 35, 0.1) 0 0 14px rgb(11, 102, 35, 0.05);
+  transition: all 0.3s ease;
+}
 
-       transition: all 0.3s ease;
-     }
+.homecontainer button.fa-chevron-left:hover {
+  transform: scale(1.08);
+  background-color: #02631c !important;
+}
 
-     .homecontainer button.fa-chevron-right {
-       background-color: #004413;
-       color: #ffffff;
-       border: none;
-       border-radius: 50%;
-       width: 45px;
-       height: 45px;
-       cursor: pointer;
-       display: inline-flex;
-       align-items: center;
-       justify-content: center;
-       font-size: 16px;
+.homecontainer button.fa-chevron-right:hover {
+  transform: scale(1.08);
+  background-color: #02631c !important;
+}
 
-       box-shadow:
-         0 0 0 4px rgb(11, 102, 35, 0.2) 0 0 0 9px rgb(11, 102, 35, 0.1) 0 0 14px rgb(11, 102, 35, 0.05);
+.homecontainer {
+  background-color: lab(96.38% -19.76 12.88);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 70px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 0px;
+}
 
-       transition: all 0.3s ease;
-     }
+.homecontainer .caso1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
 
-     .homecontainer button.fa-chevron-left:hover {
-       transform: scale(1.08);
-       background-color: #02631c !important;
-     }
+.homecontainer .caso1 .p {
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+}
 
-     .homecontainer button.fa-chevron-right:hover {
-       transform: scale(1.08);
-       background-color: #02631c !important;
-     }
+.btn-descubrir:hover {
+  transform: scale(1.08);
+}
 
-     .homecontainer {
+.btn-descubrir {
+  background-color: #004413;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 6px 0px;
+  gap: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 150px;
+  text-align: center;
+}
 
-       background-color: lab(96.38% -19.76 12.88);
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       padding: 5px 70px;
-       width: 100%;
-       max-width: 1200px;
-       position: relative;
-       box-sizing: border-box;
-       margin: 0 auto;
-       border-radius: 0px;
+.homecontainer .btn-descubrir {
+  transform: scale(1.08);
+  background-color: #02631c !important;
+}
 
+.caso2 img {
+  width: 200px;
+  height: 100px;
+  padding: 0px;
+  box-sizing: border-box;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
 
-       .caso1 {
-         display: flex;
-         flex-direction: column;
-         width: 50%;
-         font-family: 'Arial', sans-serif;
-         text-align: left;
+.homecontainer1 h1 {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Poppins" sans-serif;
+}
 
-         .p {
-           text-align: left;
-           font-family: 'Arial', sans-serif;
-         }
+.homecontainer1 {
+  background-color: oklab(99.107% 0 -0.00011);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 70px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 3 auto;
+  border-radius: 8px;
+  text-align: center;
+}
 
-       }
+.homemarcas img {
+  flex: 1 1 120px;
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
 
-       .btn-descubrir:hover {
-         transform: scale(1.08);
+.homemarcas img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 6px rgb(11, 102, 35, 0.25), 0 0 0 12px rgb(11, 102, 35, 0.15), 0 0 18px rgb(11, 102, 35, 0.1);
+}
 
-       }
+.homemarcas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15 10px;
+  box-sizing: border-box;
+  gap: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
 
-       .btn-descubrir {
-         background-color: #004413;
-         color: #ffffff;
-         border-radius: 10px;
-         padding: 6px 0px;
-         gap: 5px;
-         cursor: pointer;
-         align-items: center;
-         justify-content: center;
-         font-size: 15px;
-         width: 150px;
-         text-align: center;
+.clientes .legitimidad {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+}
 
+.clientes .legitimidad .mensaje {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  gap: 80px;
+  text-align: center;
+}
 
+.clientes h1 {
+  text-align: center;
+  font-size: 14px;
+}
 
+.clientes .opiniones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
 
-       }
+.clientes .opiniones .comet {
+  width: 400px;
+  display: flex;
+  height: 120px;
+}
 
-       .homecontainer .btn-descubrir {
-         transform: scale(1.08);
-         background-color: #02631c !important;
-       }
+.clientes .opiniones .comet .contimg img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
 
-       .caso2 img {
+.clientes .opiniones .comet .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+}
 
-         width: 200px;
-         height: 100px;
-         padding: 0px;
-         box-sizing: border-box;
-         object-fit: cover;
-         mix-blend-mode: multiply;
+.clientes .opiniones .comet .text h1 {
+  font-size: 22px;
+}
 
-       }
-     }
-
-     .homecontainer1 h1 {
-       text-align: center;
-       font-size: 12px;
-       font-family: "Poppins" sans-serif;
-     }
-
-     .homecontainer1 {
-
-       background-color: oklab(99.107% 0 -0.00011);
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       padding: 10px 70px;
-       width: 100%;
-       max-width: 1200px;
-       position: relative;
-       box-sizing: border-box;
-       margin: 3 auto;
-       border-radius: 8px;
-       text-align: center;
-     }
-
-     .homemarcas img {
-       flex: 1 1 120px;
-       max-width: 100px;
-       height: auto;
-       object-fit: contain;
-       cursor: pointer;
-       border-radius: 8px;
-       box-sizing: border-box;
-
-     }
-
-     .homemarcas img:hover {
-       transform: scale(1.08);
-       box-shadow: 0 0 0 6px rgb(11, 102, 35, 0.25),
-         0 0 0 12px rgb(11, 102, 35, 0.15),
-         0 0 18px rgb(11, 102, 35, 0.1);
-
-     }
-
-     .homemarcas {
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: center;
-       flex-wrap: wrap;
-       width: 100%;
-       max-width: 1200px;
-       margin: 0 auto;
-       padding: 15 10px;
-       box-sizing: border-box;
-       gap: 20px;
-       background-color: hsl(0, 0%, 100%);
-
-     }
-
-     .clientes {
-       .legitimidad {
-         display: flex;
-         justify-content: center;
-         padding: 5px;
-
-         width: 100%;
-
-
-         .mensaje {
-           width: 50%;
-           display: flex;
-           justify-content: center;
-           font-size: 14px;
-           gap: 80px;
-           text-align: center;
-           
-
-         }
-
-
-       }
-
-       h1 {
-         text-align: center;
-         font-size: 14px;
-       }
-
-       .opiniones {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         gap: 20px;
-         width: 100%;
-
-         .comet {
-           width: 400px;
-           display: flex;
-           height: 120px;
-
-           .contimg {
-             img {
-               width: 120px;
-               height: 120px;
-               border-radius: 100%;
-
-             }
-           }
-
-           .text {
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: start;
-             gap: 10px;
-             padding: 10px;
-
-             h1 {
-               font-size: 22px;
-             }
-
-             p {
-               font-size: 12px;
-             }
-           }
-         }
-       }
-     }
-   }
- }
+.clientes .opiniones .comet .text p {
+  font-size: 12px;
+}
+.

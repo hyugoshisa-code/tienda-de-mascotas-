@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/Otros.css">
+    <link rel="stylesheet" href="../css/tienda.css">
+
 </head>
 
 <body>
@@ -158,6 +160,109 @@
 
     </header>
     <main>
+
+        <div class="barra">
+            <p>
+
+                <span>inicio</span>
+                <span>perro</span>
+                <span>cachorro</span>
+            </p>
+
+            <h3><span>cachoros</span></h3>
+
+            <div class="orden">
+                <label for="ordenar">ordenar por :</label>
+                <select id="ordenar">
+                    <option value="mas vendidos">mas vendidos</option>
+                    <option value="menor-precio ">menor precio</option>
+                    <option value="mayor-precio">mayor precio</option>
+
+                </select>
+            </div>
+
+        </div>
+
+
+        <aside class="form">
+            <div class="grupo-filtro">
+                <h3>Razas</h3>
+                <label><input type="checkbox"> Husky</label>
+                <label><input type="checkbox"> Bulldog</label>
+                <label><input type="checkbox"> Shitzu</label>
+            </div>
+
+            <div class="grupo-filtro">
+                <h3>Categoría</h3>
+                <label><input type="checkbox" checked> Comida</label>
+                <label><input type="checkbox"> Salud e Higiene</label>
+            </div>
+
+            <div class="grupo-filtro filtro-precio">
+                <h3>Precios</h3>
+                <div class="inputs-precio">
+                    <input type="number" placeholder="Mín.">
+                    <span>a</span>
+                    <input type="number" placeholder="Máx.">
+                    <button type="button" class="btn-filtrar">👁</button>
+                </div>
+            </div>
+            <div class="productos-grid">
+
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="../assets/img/prductos de gato/mimaskot gato cachorro.webp" alt="Royal Canin Puppy Medium 4kg" style="height: 200px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Royal Canin Puppy Medium 4kg</h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito">🛒</span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+
+
+            </div>
+        </aside>
+
+
+
+        <!-- 
+        <section class="productos-content">
+
+        
+
+            <div class="productos-grid">
+
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="ruta-imagen-producto.jpg" alt="Royal Canin Puppy Medium 4kg">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Royal Canin Puppy Medium 4kg</h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito">🛒</span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+
+
+            </div>
+
+           
+            <nav class="paginacion" aria-label="Navegación de páginas">
+                <button class="btn-pag" disabled>&lt;</button>
+                <button class="btn-pag activo">1</button>
+                <button class="btn-pag">2</button>
+                <button class="btn-pag">3</button>
+                <button class="btn-pag">&gt;</button>
+            </nav>
+
+        </section>   -->
 
     </main>
     <footer>
