@@ -23,6 +23,20 @@
                  display: flex;
                  justify-content: space-around;
                  align-items: center;
+                 .storeContainer{
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 10px;
+                    
+                    .btn {
+                        font-size: 14px; 
+                        background-color: hsl(134, 94%, 81%); 
+                        border-radius: 5px;
+                        padding: 4px; 
+                    }
+
+
+                 }
              }
 
              .contactFormContainer {
