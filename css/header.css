@@ -322,7 +322,7 @@
                justify-content: center;
                align-items: center;
 
-               ul {
+               >ul {
                    width: 80%;
                    display: flex;
                    justify-content: space-around;
@@ -330,9 +330,9 @@
                    list-style: none;
                    padding: 10px 0;
 
-                   li {
+                   >li {
 
-                       a {
+                       >a {
                            text-decoration: none;
                            color: black;
                            font-family: 'Arial', sans-serif;
@@ -340,11 +340,50 @@
                            display: flex;
                            justify-content: center;
                            gap: 5px;
+                           position: relative;
+                           width: 120px;
+
+                           >.sub-items {
+                               position: absolute;
+                               top: 18px;
+                               width: 120px;
+                               display: none;
+                               flex-direction: column;
+                               justify-content: center;
+                               align-items: center;
+                               padding: 5px;
+                               gap: 5px;
+                               background-color: white;
+                               z-index: 10;
+                               border: 1px solid #004413;
+
+                               >p {
+                                   width: 100%;
+                                   height: 24px;
+                                   display: flex;
+                                   justify-content: center;
+                                   align-items: center;
+                               }
+
+                               >p:hover {
+                                   background-color: #004413;
+                                   color: white;
+
+                                   i {
+                                       color: white;
+                                   }
+                               }
+
+                           }
                        }
 
                        &:hover {
                            a {
                                color: #004413;
+
+                               >.sub-items {
+                                   display: flex;
+                               }
                            }
 
                            i {
