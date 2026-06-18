@@ -160,21 +160,45 @@
 
 
     </header>
-    <main>
+     <main>
 
         <div class="barra">
-            <p>
-
-                <span>inicio</span>
+            <h2>
+                <span>Inicio</span>
+                 <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
                 <span>perro</span>
-                <span>cachorro</span>
-            </p>
+                 <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                <span>cachorros</span>
+            </h2>
 
-            <h3><span>cachoros</span></h3>
+            <h3>
+                
+                <a href="./Accesorios.html/#">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    cachorro
+                </a>
+                
+                
+
+                <a href="./Inicio.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Adulto
+                </a>
+                
+                
+                 <a href="./Inicio.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Senior
+                </a>
+                
+            </h3>
+
 
             <div class="orden">
-                <label for="ordenar">ordenar por :</label>
-                <select id="ordenar">
+                <label for="ordenar">
+                    <h2>ordenar por:</h2>
+                </label>
+                <select id="ordenar" class="ordenar">
                     <option value="mas vendidos">mas vendidos</option>
                     <option value="menor-precio ">menor precio</option>
                     <option value="mayor-precio">mayor precio</option>
@@ -184,65 +208,248 @@
 
         </div>
 
-        
-        <aside class="form">
-            <div class="grupo-filtro">
-                <h3>Razas</h3>
-                <label><input type="checkbox"> Husky</label>
-                <label><input type="checkbox"> Bulldog</label>
-                <label><input type="checkbox"> Shitzu</label>
-            </div>
 
-            <div class="grupo-filtro">
-                <h3>Categoría</h3>
-                <label><input type="checkbox" checked> Comida</label>
-                <label><input type="checkbox"> Salud e Higiene</label>
-            </div>
+        <div class="from">
+            <aside class="form">
+                <div class="acesorios">
+                    <h3>Acesorios</h3>
+                    <p>
+                        <label><input type="checkbox"> correa</label>
+                        <label><input type="checkbox"> cama</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox"> platos</label>
+                        <label><input type="checkbox"> arnes</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox"> juguete porfiado para pero</label>
+                    </p>
 
-            <div class="grupo-filtro filtro-precio">
-                <h3>Precios</h3>
-                <div class="inputs-precio">
-                    <input type="number" placeholder="Mín.">
-                    <span>a</span>
-                    <input type="number" placeholder="Máx.">
-                    <button type="button" class="btn-filtrar">👁</button>
+
+
                 </div>
-            </div>
-        </aside>
-<!-- 
-        <section class="productos-content">
 
-        
+                <div class="filtro">
+                    <h3>Categoría</h3>
+                    <p>
+                        <label><input type="checkbox" checked> Comida</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox"> accesrios</label>
+                    </p>
 
-            <div class="productos-grid">
+                </div>
+                <div class="marcas">
+                    <h3>marcas</h3>
+                    <p>
+                        <label><input type="checkbox" checked> Mimaskot</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox">Ricocan</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox">Supercan</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox">Dog chow</lab>
+                    </p>
+                    <p>
+                        <label><input type="checkbox">Pedigre</lab>
+                    </p>
+
+                </div>
+
+                <div class="precio">
+                    <h3>Precios</h3>
+                    <div class="inputs-precio">
+                        <input type="number" placeholder="Mín." style="height: 20px;">
+                        <span>a</span>
+                        <input type="number" placeholder="Máx." style="height: 20px;">
+                        <button type="button" class="btn-filtrar">👁</button>
+                    </div>
+                </div>
+            </aside>
+            <div class="productos">
 
                 <article class="producto-card">
                     <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
-                    <img src="ruta-imagen-producto.jpg" alt="Royal Canin Puppy Medium 4kg">
+                    <img src="/assets/img/prductos de perro/15kl ricocan cachorro.webp"  style="height: 150px;">
 
                     <div class="producto-info">
-                        <h2 class="producto-titulo">Royal Canin Puppy Medium 4kg</h2>
+                        <h2 class="producto-titulo">15kg croketas para cachorro </h2>
                         <p class="producto-precio">S/ 99.00</p>
 
                         <button type="button" class="btn-carrito">
-                            <span class="icono-carrito">🛒</span> Agregar al Carrito
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/244219-800-auto dog chow.webp" 
+                        style="height: 150px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Dog chow croquetas para adulto </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/634902-800-auto.webp" 
+                        style="height: 150px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo"> Mimaskot croquetas para senior</h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/adulto.webp"  style="height: 150px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Ricocan croquetas para adulto </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
                         </button>
                     </div>
                 </article>
 
 
-            </div>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/dog chow cachorro 15kl.jpg"  style="height: 140px;">
 
-           
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Dog chow  croquetas para  cachorro</h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/dog chow senior.jpg"  style="height: 140px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Dog chow croquetas  para senior  </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/mimakot senior.webp"  style="height: 140px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Mimaskot  croquetas para senior  </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/mimaskot cachorro.webp"  style="height: 140px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">mimaskot croquetas para cachorro </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/pedigre  cachorro.webp"  style="height: 140px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Pedigre croquetas para cachorro  </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/pedigre adulto.webp"  style="height: 140px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Pedigre croquetas para adulto </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/pedrigue senior.webp"  style="height: 140px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Pedigre croquetas para senior  </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+                <article class="producto-card">
+                    <button type="button" class="btn-favorito" aria-label="Añadir a favoritos">♡</button>
+                    <img src="/assets/img/prductos de perro/ricocan adulto.jpg"  style="height: 140px;">
+
+                    <div class="producto-info">
+                        <h2 class="producto-titulo">Ricocan croquetas para senior  </h2>
+                        <p class="producto-precio">S/ 99.00</p>
+
+                        <button type="button" class="btn-carrito">
+                            <span class="icono-carrito"><i class="fa-solid fa-cart-shopping"></i></span> Agregar al Carrito
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="paginas">
             <nav class="paginacion" aria-label="Navegación de páginas">
+            
                 <button class="btn-pag" disabled>&lt;</button>
                 <button class="btn-pag activo">1</button>
                 <button class="btn-pag">2</button>
                 <button class="btn-pag">3</button>
+                <button class="btn-pag">4</button>
+                <button class="btn-pag">5</button>
                 <button class="btn-pag">&gt;</button>
             </nav>
+        </div>
 
-        </section>   -->
+
+
+
 
     </main>
    

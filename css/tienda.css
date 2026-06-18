@@ -8,26 +8,171 @@
      width: 100%;
      font-family: 'Arial', sans-serif;
 
-     main {
-         margin: 20px 0;
 
-         .barra {
-             width: 100%;
+ }
+
+ main {
+     margin: 20px 0;
+
+
+     .barra {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         border-bottom: 1px solid #e0e0e0;
+         padding-bottom: 10px;
+
+         h2 {
+             font-size: 14px;
+
+         }
+
+         lu li:hover > ul{
+            display: flex;  
+
+             gap: 5px;
+             padding: 10px;
+             border: 1px solid #ccc;
+             border-radius: 10px;
+
+             font-size: 14px;
+
+             
+             
+         }
+
+         .orden {
              display: flex;
-             align-items: center;
-             justify-content: space-around;
-             border-bottom: 1px solid #e0e0e0;
-             padding-bottom: 10px;
+             font-size: 14px;
 
-             p {
+             .h2 {
                  font-size: 14px;
+             }
+
+
+             .ordenar {
+
+                 font-size: 14px;
+             }
+
+         }
+     }
+
+
+     .from {
+         padding-left: 40px;
+         display: flex;
+         padding: 10px;
+
+         .form {
+             border: 1px solid #ccc;
+             border-radius: 10px;
+             width: 30%;
+             display: center;
+             font-size: 20px;
+             display: flex;
+             flex-direction: column;
+             gap: 30px;
+             padding: 10px;
+
+
+             .precio {
+                 imputs-precio {
+                     display: center;
+                     font-size: 20px;
+
+                 }
 
              }
 
-             h3 {
-                 font-size: 14px;
 
+
+         }
+
+         .productos {
+             Display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             gap: 15px;
+
+             .producto-card {
+                 position: relative;
+                 border: 1px solid #ccc;
+                 border-radius: 8px;
+                 padding: 15px;
+                 text-align: center;
+                 background-color: white;
+                 width: 200px;
+                 max-width: 80%;
+
+                 .btn-favorito {
+                     position: absolute;
+                     top: 15px;
+                     right: 15px;
+                     color: red;
+                     background: none;
+                     border: none;
+                     font-size: 1.5rem;
+                     cursor: pointer;
+
+                 }
+
+                 .img {
+                     width: 100%;
+                     object-fit: contain;
+
+                 }
+
+                 .producto-titulo {
+                     font-size: 15px;
+                     margin: 10px 0;
+                 }
+
+                 .producto-precio {
+                     font-weight: bold;
+                     color: #333;
+                     margin-bottom: 15px;
+                 }
+
+                 .btn-carrito {
+                     background-color: #28a745;
+                     color: white;
+                     border: none;
+                     padding: 10px;
+                     width: 100%;
+                     border-radius: 4px;
+                     cursor: pointer;
+                     font-size: 15px;
+                     margin-top: 15px;
+                 }
              }
          }
      }
+
+     .paginas {
+         Display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 15px;
+
+         .paginacion {
+
+             .btn-pag {
+                 margin: 0 6px;
+                 background-color: hsl(133, 100%, 95%);
+                 padding: 15px;
+                 border: none;
+                 border-radius: 100%;
+                 cursor: pointer;
+                 font-size: 15px;
+
+
+             }
+
+         }
+
+
+     }
  }
+ 
