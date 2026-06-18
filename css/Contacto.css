@@ -10,73 +10,226 @@
 
      main {
          margin: 20px 0;
+         display: flex;
 
          .contactContainer {
-        
              display: flex;
-             justify-content: space-around;
-             align-items: center;
+             flex-direction: column;
+             justify-content: start;
+             align-items: start;
+             width: 75%;
 
              .stores {
-                 
-                 width: 67%;
+                 width: 100%;
                  display: flex;
-                 justify-content: space-around;
-                 align-items: center;
-                 .storeContainer{
-                    text-align: center;
-                    font-size: 14px;
-                    padding: 10px;
-                    
-                    .btn {
-                        font-size: 14px; 
-                        background-color: hsl(134, 94%, 81%); 
-                        border-radius: 5px;
-                        padding: 4px; 
-                    }
+                 flex-direction: column;
+                 justify-content: start;
+                 align-items: start;
+                 height: 500px;
+                 gap: 20px;
+                 padding: 40px;
 
+                 >h3 {
+                     font-size: 22px;
+                     font-weight: bold;
+                     margin-bottom: 16px;
 
+                     >i {
+                         color: #004413;
+                         margin-right: 10px;
+                     }
+                 }
+
+                 .storesContainer {
+                     display: flex;
+                     width: 100%;
+                     height: 100%;
+                     justify-content: space-around;
+                     align-items: center;
+
+                     .storeContainer {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         gap: 16px;
+                         width: 30%;
+                         padding: 8px;
+
+                         .mapContainer {
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             overflow: hidden;
+                             width: 100%;
+
+                             iframe {
+                                 width: 100%;
+                                 aspect-ratio: 2;
+                             }
+                         }
+
+                         h4 {
+                             font-size: 18px;
+                             color: #004413;
+                         }
+
+                         p {
+                             font-size: 16px;
+                         }
+
+                         button {
+                             width: 100%;
+                             padding: 10px;
+                             font-size: 16px;
+                             color: #004413;
+                             border: 1px solid #004413;
+                             border-radius: 5px;
+                             background-color: transparent;
+                             cursor: pointer;
+
+                             &:hover {
+                                 color: white;
+                                 background-color: #004413;
+                                 border: 1px solid white;
+                             }
+                         }
+                     }
                  }
              }
 
-             .contactFormContainer {
-                 width: 30%;
-                 
+             .storesInfo {
+                 width: 100%;
                  display: flex;
                  justify-content: center;
                  align-items: center;
+                 gap: 50px;
 
-                 .formContainer {
-                     
-                     width: 90%;
+                 >div {
                      display: flex;
-                     flex-direction: column;
                      justify-content: center;
-                     align-items: start;
-                     gap: 10px;
-                     padding: 10px;
+                     align-items: center;
+                     width: 40%;
+                     gap: 20px;
 
-                     >form {
-                      
+                     .iconContainer {
+                         width: 80px;
+                         padding: 20px;
+                         aspect-ratio: 1;
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                         background-color: #00441320;
+                         border-radius: 50%;
+
+                         i {
+                             width: 100%;
+                             height: 100%;
+                             font-size: 40px;
+                             color: #004413;
+                         }
+                     }
+
+                     .text {
                          display: flex;
                          flex-direction: column;
                          justify-content: center;
                          align-items: start;
                          gap: 10px;
-                         width: 100%;
 
-                         >label {
-                             display: flex;
-                             flex-direction: column;
-                             gap: 5px;
+                         h4 {
+                             font-size: 22px;
                              font-weight: bold;
-                             width: 100%;
+                         }
 
-                             >input {
-                                 font-size: 16px;
-                                 padding: 5px;
-                                 width: 100%;
+                         p {
+                             font-size: 18px;
+                             display: flex;
+                             gap: 20px;
+
+                             span {
+                                 color: #004413;
+                                 font-weight: bold;
                              }
+                         }
+                     }
+                 }
+             }
+
+         }
+
+         aside {
+             width: 25%;
+             display: flex;
+             justify-content: center;
+             align-items: start;
+             height: 500px;
+             padding: 40px 0px;
+
+             .formContainer {
+                 width: 80%;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: start;
+                 gap: 16px;
+
+                 >h3 {
+                     font-size: 20px;
+                     font-weight: bold;
+                     margin-bottom: 18px;
+
+                     >i {
+                         color: #004413;
+                         margin-right: 10px;
+                     }
+                 }
+
+                 >form {
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: start;
+                     gap: 20px;
+                     width: 100%;
+
+                     >label {
+                         display: flex;
+                         flex-direction: column;
+                         gap: 5px;
+                         font-weight: bold;
+                         width: 100%;
+                         font-size: 18px;
+
+                         >input,
+                         >textarea {
+                             font-family: 'Arial', sans-serif;
+                             font-size: 16px;
+                             padding: 8px;
+                             width: 100%;
+                             border: 1px solid #0001;
+                         }
+
+                         >textarea {
+                             height: 120px;
+                         }
+                     }
+
+                     >button {
+                         background-color: #004413;
+                         width: 100%;
+                         padding: 14px;
+                         font-size: 16px;
+                         color: white;
+                         border: 1px solid white;
+                         border-radius: 5px;
+                         cursor: pointer;
+
+                         &:hover {
+                             color: #004413;
+                             background-color: white;
+                             border: 1px solid #004413;
+
                          }
                      }
                  }
